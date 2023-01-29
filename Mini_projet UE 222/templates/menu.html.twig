@@ -1,0 +1,15 @@
+<ul>
+    {% for item in items %}
+        <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+    {% endfor %}
+</ul>
+
+$items = [
+    ['name' => 'Home', 'url' => $this->generateUrl('home')],
+    ['name' => 'About', 'url' => $this->generateUrl('about')],
+    ['name' => 'Contact', 'url' => $this->generateUrl('contact')],
+];
+
+return $this->render('menu.html.twig', [
+    'items' => $items,
+]);

@@ -1,0 +1,19 @@
+{# templates/custom.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block title %}Custom Page{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('build/css/app.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="text-center">Welcome to the custom page!</h1>
+        <p>This is where you would add your custom content.</p>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('build/js/app.js') }}"></script>
+{% endblock %}
